@@ -28,7 +28,7 @@ public class Task03Main {
 
     public static List<Set<String>> findAnagrams(InputStream inputStream, Charset charset) {
         try (BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream, charset))) {
-            // Чтение слов
+
             List<String> words = reader.lines()
                     .map(String::trim)
                     .map(String::toLowerCase)
@@ -55,7 +55,7 @@ public class Task03Main {
         }
     }
 
-    // Метод для сортировки букв в слове
+
     private static String sortWord(String word) {
         char[] chars = word.toCharArray();
         Arrays.sort(chars);

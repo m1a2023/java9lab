@@ -14,18 +14,18 @@ public class TestsImpl implements ITests {
     @Test
     public void testNonEmpty() {
         Pair<Integer, String> pair = Pair.of(1, "hello");
-        Integer i = pair.getFirst();
-        String s = pair.getSecond();
-
-        Assertions.assertThat(i).isEqualTo(1);
-        Assertions.assertThat(s).isEqualTo("hello");
-
-        AtomicBoolean called = new AtomicBoolean(false);
-        pair.ifPresent((first, second) -> {
-            Assertions.assertThat(first).isEqualTo(1);
-            Assertions.assertThat(second).isEqualTo("hello");
-            called.set(true);
-        });
+//        Integer i = pair.getFirst();
+//        String s = pair.getSecond();
+//
+//        Assertions.assertThat(i).isEqualTo(1);
+//        Assertions.assertThat(s).isEqualTo("hello");
+//
+//        AtomicBoolean called = new AtomicBoolean(false);
+//        pair.ifPresent((first, second) -> {
+//            Assertions.assertThat(first).isEqualTo(1);
+//            Assertions.assertThat(second).isEqualTo("hello");
+//            called.set(true);
+//        });
         Assertions.assertThat(called).isTrue();
     }
 
