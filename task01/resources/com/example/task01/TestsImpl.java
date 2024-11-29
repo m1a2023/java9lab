@@ -3,6 +3,9 @@ package com.example.task01;
 import org.assertj.core.api.Assertions;
 import org.junit.Test;
 
+import com.example.task01.ITests;
+import com.example.task01.Pair;
+
 import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.function.BiConsumer;
 
